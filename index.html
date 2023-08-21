@@ -1,212 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens\favicon.png" type="image/x-icon">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Pet Friends Divina</title>
 </head>
-<body>
-<div class="pai">
-    <div class="topo">
-        <div class="topo_texto">
-        <span>Av. Flávio Boianovski, 385 - Portaria | Capão da Canoa/RS</span><br>
-        <span><u>Telefone:</u> (51) 9 9855-7211</span><br>
-        <span><u>E-mail:</u> pedjoness28@gmail.com</span><br>
-        </div>
+<body id="body">
 
-        <div class="links">
-        <span>
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-da-mata-quadros-842550269/" target="_blank">
-                <img src="imagens\linkedin-logo.png" alt="Linkedin">
+    <header>
+
+        <div class="headerTop">
+
+            <a class="btn navIcon" data-bs-toggle="collapse" href="#navigation" role="button">
+                <img src="imagens\menuIcon.png" alt="menu icon" id="menuIcon">
             </a>
-        </span> <!--linkedin - link com imagem pra rede social-->
-        <span>
-            <a href="https://github.com/xJoaoPedro" target="_blank">
-                <img src="imagens\github-logo.png" alt="github">
+            
+            <a href="index.html" class="linkLogo">
+                <img src="imagens\logo2.png" alt="logo" id="logoIcon">
             </a>
-        </span><!--github-->
-        <span>
-            <a href="https://www.instagram.com/pedjonesss/" target="_blank">
-                <img src="imagens\instagram-logo.png" alt="Instagram">
-            </a>
-        </span><!--instagram-->
-        <span>
-            <a href="https://api.whatsapp.com/send?phone=5551998557211&text=Oi%20João,%20vim%20pelo%20seu%20currículo!" target="_blank">
-                <img src="imagens\whatsapp-logo.png" alt="whatsapp">
-            </a> 
-        </span><!--Whatsapp-->
+    
+            <div class="dropdown">
+                <button type="button" class="btn userButton dropdown-toggle" data-bs-toggle="dropdown" id="userButton" onclick="inverterSeta()" onblur="resetarSeta()">
+                  <img src="imagens\userIcon.png" alt="user icon" id="userIcon">
+                  <img src="imagens\arrowIcon.png" alt="arrow icon" id="arrowIcon">
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="#">Registre-se</a></li>
+                </ul>
+            </div>
+        
         </div>
-    </div> <!--fechamento topo-->
+        
+    </header>
 
-    <div class="perfil">
-        <div class="dados">
-            <h1>João Pedro da Mata Quadros</h1>
-            <p style="font-weight: bold;">
-            18 anos <br>
-            Estudante de Análise e Desenvolvimento de Sistemas na Ulbra - Torres <br>
-            </p>
-            <br>
-            <p style="font-size: 14px;">
-            Procuro trabalhar com o que cresceu e evoluiu junto comigo, a tecnologia.
-            </p>
-            <br>
-            <p class="hello">
-            -Hello World!
-            </p>
-        </div>
-        <div class="foto">
-            <img src="imagens\pfp.png" alt="profile pic">
-        </div>
-    </div> <!--fechamento perfil-->
+    <div id="navigation" class="collapse navegacao">
 
-    <div class="principal">
-        <div class="esquerda">
-            <div class="exp">
-            <h2>Experiências:</h2>
-        <br>
-            <h3><u>Prefeitura Municipal de Capão da Canoa</u></h3>
-            <p style="padding-left: 20px;">
-            Estagiário - Setor de topografia 
-        <br>
-            Setembro/2021 - Dezembro 2022 
-        <br>
-            Atendimento ao público, trabalho em equipe e assistência nas demandas do setor.
-            </p>
-        <br>
-            <h3><u>Prefeitura Municipal de Capão da Canoa</u></h3>
-            <p style="padding-left: 20px;"> <!--estilizado por tag--> <!--paragrafo justificado-->
-            Atendente - Setor de topografia
-        <br>
-            Janeiro/2022 - Atualmente
-        <br>
-            Atendimento ao público, acompanhamento de processos e assistência nas demandas do setor.
-            </p>
+        <button class="btn trocasButton" type="button" data-bs-toggle="collapse" data-bs-target="#trocas" aria-expanded="false" aria-controls="trocas">
+            Trocas
+        </button>
+        <div class="collapse" id="trocas">
+            <div class="card">
+                aqui aparece as opções para trocas
             </div>
-        <br>
-            <div class="qualidades">
-            <h2>Qualidades:</h2>
-            <ul>
-                <li>Autodidata - grande facilidade para aprender e absorver coisas novas</li>
-                <li>Prestativo - disponível para ajudar em todo tipo de situação</li>
-                <li>Comunicativo - ótimo para trabalho em equipe</li>
-                <li>Focado - sempre com o objetivo de completar com excelência o que for pedido</li>
-            </ul>
-            </div>
-            <div class="objetivos">
-            <h2>Objetivos:</h2>
-        <br>
-            <p>
-            Adquirir cada vez mais conhecimento e compartilhar experiências junto de colegas, além de poder trabalhar nesta área tão encantadora, versátil e útil em diversas áreas pelo mundo afora.
-            </p>
-            </div>
-        </div> <!--fechamento exp-->
-
-        <div class="direita">
-            <div class="ensino">
-            <h2>Ensino:</h2>
-        <br>
-            <p>
-            <b>Ensino Fundamental</b>
-        <br>
-            Instituto Divina Providência | 2019
-        <br>
-            <img src="imagens\divina-logo.png" alt="divina logo">
-            <div class="barra"></div>
-        <br>
-            100%
-            </p>
-        <br>
-        <p>
-            <b>Ensino Médio</b>
-        <br>
-            Instituto Divina Providência | 2022
-        <br>
-            <img src="imagens\divina-logo.png" alt="divina logo">
-            <div class="barra"></div>
-        <br>
-            100%
-            </p>
-        <br>
-        <p>
-            <b>Ensino Superior</b>
-        <br>
-            Ulbra Torres
-        <br>
-            <img src="imagens\ulbra-logo.png" alt="divina logo">
-            <div class="barraUlbra"><div class="barradentro"></div></div>
-        <br>
-            3%
-            </p>
-            </div>
-            <br>
-            <div class="linguagens">
-            <h2>Linguagens:</h2>
-        <br>
-        <div class="textoling"> <!--classe com as habilidades de 1 a 5-->
-            <p>
-            <b>HTML:</b>
-            <div class="circulo"></div>
-            <div class="circulo"></div>
-            <div class="circulovazio"></div>
-            <div class="circulovazio"></div>
-            <div class="circulovazio"></div>
-            </p>
-        <br>
-        <p>
-            <b>CSS:</b>
-            <div class="circulo"></div>
-            <div class="circulovazio"></div>
-            <div class="circulovazio"></div>
-            <div class="circulovazio"></div>
-            <div class="circulovazio"></div>
-            </p>
-        <br>
-        <p>
-            <b>Python:</b>
-            <div class="circulo"></div>
-            <div class="circulovazio"></div>
-            <div class="circulovazio"></div>
-            <div class="circulovazio"></div>
-            <div class="circulovazio"></div>
-            </p>
-        <div class="limpa"></div>
         </div>
+    
+        <button class="btn adocaoButton" type="button" data-bs-toggle="collapse" data-bs-target="#adocao" aria-expanded="false" aria-controls="adocao">
+            Adoção
+        </button>
+        <div class="collapse" id="adocao">
+                <div class="adocaoObj">
+                    <img src="imagens\cachorro.png" alt="dog icon"> Cachorros <!--placeholders-->
+                </div>
+                <div class="adocaoObj">
+                    <img src="imagens/gato.png" alt="cat icon"> Gatos
+                </div>
+                <div class="adocaoObj">
+                    <img src="imagens/passaro.png" alt="bird icon"> Pássaros
+                </div>
+                <div class="adocaoObj">
+
+                </div>
+        </div>
+
+        <button class="btn contatoButton" type="button" data-bs-toggle="collapse" data-bs-target="#contato" aria-expanded="false" aria-controls="adocao">
+            Contato
+        </button>
+        <div class="collapse" id="contato">
+            <div class="contatoCard">
+                <div class="contatoObj">
+                    Instagram
+                </div>
+                <div class="contatoObj">
+                    Facebook
+                </div>
+                <div class="contatoObj">
+                    Whatsapp
+                </div>
+
+
+
             </div>
-            <br>
-            <div class="idiomas">
-            <h2>Idiomas:</h2>
-        <br>
-        <p>
-            <b>Português:</b>
-            <div class="circulo"></div>
-            <div class="circulo"></div>
-            <div class="circulo"></div>
-            <div class="circulo"></div>
-            <div class="circulo"></div>
-            </p>
-        <br>
-            <p>
-            <b>Inglês:</b>
-            <div class="circulo"></div>
-            <div class="circulo"></div>
-            <div class="circulo"></div>
-            <div class="circulo"></div>
-            <div class="circulovazio"></div>
-            </p>
-        <br>
-            <p>
-            <b>Espanhol:</b>
-            <div class="circulo"></div>
-            <div class="circulo"></div>
-            <div class="circulovazio"></div>
-            <div class="circulovazio"></div>
-            <div class="circulovazio"></div>
-            </p>                
-            </div>
-        </div> <!--fechamento tech-->
+        </div>
+
     </div>
-</div> <!--fechamento pai-->
+
+    <main>
+        
+        <!--repetição feita só para demonstração-->
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+        <section>
+            aqui segue o resto da página
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
