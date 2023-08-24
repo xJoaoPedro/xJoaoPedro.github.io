@@ -195,10 +195,12 @@
     .navOptions a {
         width: 100%;
         height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #FFFFFF;
         text-decoration: none;
         font-weight: 500;
-        padding: 5px 0 5px 130px;
         transition: background-color 0.3s, color 0.3s;
     }
 
