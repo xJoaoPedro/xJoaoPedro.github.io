@@ -75,6 +75,10 @@
         rotate: 180deg;
     }
 
+    .userButton:hover #arrowIcon{
+        rotate: 180deg;
+    }
+
     #userIcon {
         height: 90%;
         filter: drop-shadow(1px 1px 3px #F50C14);
