@@ -111,6 +111,7 @@ header {
     position: fixed;
     top: 150px;
     width: 20%;
+    min-width: 250px;
     border-radius: 0 0 0 0;
     padding-top: 20px;
 }
@@ -259,12 +260,23 @@ section {
     align-items: center;
 }
 
+.loginBackground {
+    width: 1000px;
+    min-width: 1000px;
+    height: 750px;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/imagens/imagensLoginERegistro/login\ background1.png);
+}
+
 .login {
     width: 600px;
     min-width: 600px;
     height: 700px;
     min-height: 700px;
-    background: linear-gradient(#151f71 0%, #151f71 19%, transparent 23%, #eaeaea 82%);
+    background: linear-gradient(#151f71 0%, #151f71 19%, #FFFFFF 23%, #bbbbbb 82%);
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -297,15 +309,42 @@ section {
     justify-content: end;
     align-items: center;
     padding-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .loginCorpo form {
-    width: 75%;
+    width: 90%;
     height: 580px;
-    background: no-repeat bottom/80% url("/imagens/imagensLoginERegistro/loginBackground.png");
-
+    background: no-repeat bottom/80% url("/imagens/imagensLoginERegistro/loginBackground2.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.loginEmail,
+.loginSenha {
+    width: 70%;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.login form button {
+    width: 20%;
+    border-top: 0;
+    border-left: 0;
+    border-right: solid 1px #000000;
+    border-bottom: solid 2px #000000;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    transition: background-color 0.3s;
+}
+
+.login form button:hover {
+    background-color: #ebebeb;
+}
+
+/**fim do estilo do login**/
 
 
 
@@ -336,17 +375,42 @@ section {
 
 
 
+/**intermediário**/
+@media screen and (max-width: 1000px) {
+    #navigation {
+        min-width: 250px;
+    }
 
+    /**início do estilo do login**/
 
+    .loginBackground {
+        width: 600px;
+        min-width: 600px;
+        height: 750px;
+        min-height: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+    }
 
+    .login {
+        width: 80%;
+        min-width: 200px;
+        max-width: 500px;
+        height: 700px;
+        min-height: 700px;
+        background: linear-gradient(#151f71 0%, #151f71 19%, #FFFFFF 23%, #bbbbbb 82%);
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px 0 20px;
+    }
 
+    /**fim do estilo do login**/
 
-
-
-
-
-
-
+}
 
 /**mobile**/
 @media screen and (max-width: 600px) {

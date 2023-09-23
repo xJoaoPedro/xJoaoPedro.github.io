@@ -73,3 +73,13 @@ Criada a branch *"desktopPort"* para fazer a adaptação e responsividade do sit
 ---
 # 18/09/2023
 Criada a página de login do site, início de estilização. hipótese: fazer um código em JS para poder validar email e senha. focar na estilização desta parte visto que faltam ideias do que botar no corpo da principal. sem portabilidade de telas, apenas desktop. Focar em fazer a adaptação.
+
+---
+# 23/09/2023
+Relação das adaptações de tela das páginas:
+* index : desktop, intermediária e mobile
+* login : desktop, intermediária
+
+Adição do background da página de login, alterações de cores, tamanhos e centralizações da página de login.
+
+falta: port mobile da página de login, não tenho nem ideia de como vou fazer.
