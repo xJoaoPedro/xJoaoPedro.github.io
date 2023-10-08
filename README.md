@@ -95,6 +95,8 @@ Após um tempo, voltam as atualizações:
 
 * imagens meramente ilustrativas.
 
+* organização das pastas de páginas
+
 <center> <b>Ideia: fazer um carrossel com os cachorros disponíveis no lugar da foto de introdução, para poder levar diretamente para a parte de adoção sem precisar escolher na página.</b> </center>
 
 #### Ainda em uso da branch *"desktopBranch"*, porém a branch já cumpriu sua finalidade com êxito fazendo o port para deskrop, portanto:
