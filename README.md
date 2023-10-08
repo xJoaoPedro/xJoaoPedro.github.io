@@ -64,7 +64,7 @@ Início da implementação do site para tamanho de tela desktop¹, navegação f
 Merge da branch *"setaAnimacao"* na branch accordion, para junção de ícones e funcionalidades.
 
 ### Conclusão da implementação do accordion. 
-### °°°·.°·..·°¯°·._.· Merge na main!! ·._.·°¯°·.·° .·°°°
+### <center>°°°·.°·..·°¯°·._.· Merge na main!! ·._.·°¯°·.·° .·°°°</center>
 
 ---
 # 09/09/2023
@@ -83,3 +83,19 @@ Relação das adaptações de tela das páginas:
 Adição do background da página de login, alterações de cores, tamanhos e centralizações da página de login.
 
 falta: port mobile da página de login, não tenho nem ideia de como vou fazer.
+
+---
+# 07/10/2023
+Após um tempo, voltam as atualizações:
+* Abandono da tela de login por hora, até fazer a implementação real de login
+
+* visibilidade do ícone de login e registro retirada atá a implementação citada acima
+
+* criação da página para adoção de cachorros, com interface pelo menos preparada e com adaptação de tela via sistema de grid do bootstrap
+
+* imagens meramente ilustrativas.
+
+<center> <b>Ideia: fazer um carrossel com os cachorros disponíveis no lugar da foto de introdução, para poder levar diretamente para a parte de adoção sem precisar escolher na página.</b> </center>
+
+#### Ainda em uso da branch *"desktopBranch"*, porém a branch já cumpriu sua finalidade com êxito fazendo o port para deskrop, portanto:
+### <center> °°°·.°·..·°¯°·._.· Merge na main!! ·._.·°¯°·.·° .·°°°</center>

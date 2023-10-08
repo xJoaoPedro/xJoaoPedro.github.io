@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**configuração geral | vai ficar assim até ter compatibilidade com registro e login**/
+.dropdown {
+    visibility: hidden;
+}
+
+/**inicio do estilo da header**/
+header {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerTop {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    background: linear-gradient(#1B2797 0%, #151f71 85%, transparent 100%);
+}
+
+.alinhaHeader {
+    width: 75px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navIcon {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 50px;
+    border: 0px;
+}
+
+#menuIcon {
+    height: 80%;
+    filter: drop-shadow(1px 1px 3px #F50C14);
+    transition: opacity 0.3s;
+}
+
+#menuIcon:hover,
+#logoIcon:hover,
+.userButton:hover {
+    opacity: 80%;
+}
+
+.linkLogo {
+    width: fit-content;
+    height: 100px;
+    display: flex;
+    align-items: top;
+}
+
+#logoIcon {
+    height: 90%;
+    filter: drop-shadow(1px 1px 3px #F50C14);
+    transition: opacity 0.3s;
+}
+
+.userButton {
+    width: fit-content;
+    height: 55px;
+    border: 0px;
+    transition: opacity 0.3s;
+    margin: 0;
+}
+
+.userButton:hover #arrowIcon {
+    rotate: 180deg;
+}
+
+#userIcon {
+    height: 90%;
+    filter: drop-shadow(1px 1px 3px #F50C14);
+    padding: 0;
+}
+
+#arrowIcon {
+    height: 25%;
+    filter: drop-shadow(1px 1px 3px #F50C14);
+    rotate: 0deg;
+    transition: rotate 0.4s;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    padding: 0;
+    border: solid 1px #FFFFFF;
+    background: linear-gradient(40deg, #161d5d 0%, #212a79 100%);
+}
+
+.dropdown-item {
+    color: #FFFFFF;
+    font-weight: 600;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.dropdown-item:hover {
+    background-color: #FFFFFF;
+    color: #13194e;
+}
+
+/**fim do estilo da header**/
+
+/**inicio do estilo da nav**/
+#navigation {
+    position: fixed;
+    top: 150px;
+    width: 20%;
+    min-width: 250px;
+    border-radius: 0 0 0 0;
+    padding-top: 20px;
+}
+
+.navegacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+#accordion {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#trocasBtn {
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: 700;
+    background-color: #161d5d;
+    border-radius: 10px 10px 0 0;
+    border-top: solid 1px #FFFFFF;
+    border-left: solid 1px #FFFFFF;
+    border-right: solid 1px #FFFFFF;
+}
+
+#adocaoBtn {
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: 700;
+    background-color: #161d5d;
+    border-radius: 0 0 0 0;
+    border-left: solid 1px #FFFFFF;
+    border-right: solid 1px #FFFFFF;
+}
+
+#contatosBtn {
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: 700;
+    background-color: #161d5d;
+    border-radius: 0 0 10px 10px;
+    border-left: solid 1px #FFFFFF;
+    border-right: solid 1px #FFFFFF;
+    border-bottom: solid 1px #FFFFFF;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#trocasBtn:hover {
+    border-top: solid 1px #000000;
+    border-left: solid 1px #000000;
+    border-right: solid 1px #000000;
+    background-color: #FFFFFF;
+    color: #13194e;
+}
+
+#adocaoBtn:hover {
+    border-left: solid 1px #000000;
+    border-right: solid 1px #000000;
+    background-color: #FFFFFF;
+    color: #13194e;
+}
+
+#contatosBtn:hover {
+    border-bottom: solid 1px #000000;
+    border-left: solid 1px #000000;
+    border-right: solid 1px #000000;
+    background-color: #FFFFFF;
+    color: #13194e;
+}
+
+#collapseOne,
+#collapseTwo,
+#collapseThree {
+    width: 100%;
+    border-left: solid 1px #FFFFFF;
+    border-right: solid 1px #FFFFFF;
+    background-color: #1a257a;
+    padding: 5px 0;
+}
+
+.navOptions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 15px;
+}
+
+.navOptions a {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navOptions a:hover {
+    background-color: #FFFFFF;
+    color: #13194e;
+
+}
+
+.navOptions a img {
+    height: 100%;
+    padding-right: 7px;
+    transition: filter 0.3s;
+}
+
+.navOptions a:hover img {
+    filter: invert(100%);
+}
+
+/**fim do estilo da nav**/
+
+/**início do estilo da main**/
+main {
+    width: 100%;
+    height: 2000px;
+}
+
+section {
+    width: 100%;
+    height: 70px;
+    background-color: bisque;
+    margin-bottom: 50px;
+}
+
+/**fim do estilo da main**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**intermediário**/
+@media screen and (max-width: 1000px) {
+    #navigation {
+        min-width: 250px;
+    }
+
+}
+
+/**mobile**/
+@media screen and (max-width: 600px) {
+
+    /**inicio do estilo da header**/
+    header {
+        z-index: 1;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerTop {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        align-items: center;
+        background: linear-gradient(#1B2797 0%, #151f71 100%);
+    }
+
+    .navIcon {
+        display: block;
+        width: fit-content;
+        height: 40px;
+        border: 0px;
+    }
+
+    #menuIcon {
+        height: 80%;
+        filter: drop-shadow(1px 1px 3px #F50C14);
+        transition: opacity 0.3s;
+    }
+
+    #menuIcon:hover,
+    #logoIcon:hover,
+    .userButton:hover {
+        opacity: 80%;
+    }
+
+    .linkLogo {
+        width: fit-content;
+        height: 80px;
+        display: flex;
+        align-items: top;
+    }
+
+    #logoIcon {
+        height: 90%;
+        filter: drop-shadow(1px 1px 3px #F50C14);
+        transition: opacity 0.3s;
+    }
+
+    .userButton {
+        width: fit-content;
+        height: 50px;
+        border: 0px;
+        transition: opacity 0.3s;
+        margin: 0;
+    }
+
+    .userButton:hover #arrowIcon {
+        rotate: 180deg;
+    }
+
+    #userIcon {
+        height: 90%;
+        filter: drop-shadow(1px 1px 3px #F50C14);
+        padding: 0;
+    }
+
+    #arrowIcon {
+        height: 25%;
+        filter: drop-shadow(1px 1px 3px #F50C14);
+        rotate: 0deg;
+        transition: rotate 0.3s;
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+    .dropdown-menu {
+        padding: 0;
+        border: solid 1px #FFFFFF;
+        background: linear-gradient(40deg, #161d5d 0%, #212a79 100%);
+    }
+
+    .dropdown-item {
+        color: #FFFFFF;
+        font-weight: 600;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dropdown-item:hover {
+        background-color: #FFFFFF;
+        color: #13194e;
+    }
+
+    /**fim do estilo da header**/
+
+    /**inicio do estilo da nav**/
+    #navigation {
+        position: sticky;
+        top: 100px;
+        width: 100%;
+        border-radius: 0 0 0 0;
+        padding-top: 10px;
+    }
+
+    .navegacao {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(#151f71 0%, #1B2797 100%);
+        color: #FFFFFF;
+        padding-bottom: 10px;
+        border-bottom: solid 1px #FFFFFF;
+    }
+
+    #accordion {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #trocasBtn {
+        width: 100%;
+        color: #FFFFFF;
+        font-weight: 700;
+        background-color: #161d5d;
+        border-radius: 10px 10px 0 0;
+        border-top: solid 1px #FFFFFF;
+        border-left: solid 1px #FFFFFF;
+        border-right: solid 1px #FFFFFF;
+    }
+
+    #adocaoBtn {
+        width: 100%;
+        color: #FFFFFF;
+        font-weight: 700;
+        background-color: #161d5d;
+        border-radius: 0 0 0 0;
+        border-left: solid 1px #FFFFFF;
+        border-right: solid 1px #FFFFFF;
+    }
+
+    #contatosBtn {
+        width: 100%;
+        color: #FFFFFF;
+        font-weight: 700;
+        background-color: #161d5d;
+        border-radius: 0 0 10px 10px;
+        border-left: solid 1px #FFFFFF;
+        border-right: solid 1px #FFFFFF;
+        border-bottom: solid 1px #FFFFFF;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+
+    #trocasBtn:hover {
+        border-top: solid 1px #FFFFFF;
+        border-left: solid 1px #FFFFFF;
+        border-right: solid 1px #FFFFFF;
+        background-color: #FFFFFF;
+        color: #13194e;
+    }
+
+    #adocaoBtn:hover {
+        border-left: solid 1px #FFFFFF;
+        border-right: solid 1px #FFFFFF;
+        background-color: #FFFFFF;
+        color: #13194e;
+    }
+
+    #contatosBtn:hover {
+        border-bottom: solid 1px #FFFFFF;
+        border-left: solid 1px #FFFFFF;
+        border-right: solid 1px #FFFFFF;
+        background-color: #FFFFFF;
+        color: #13194e;
+    }
+
+    #collapseOne,
+    #collapseTwo,
+    #collapseThree {
+        width: 100%;
+        border-left: solid 1px #FFFFFF;
+        border-right: solid 1px #FFFFFF;
+        background-color: #1a257a;
+        padding: 5px 0;
+    }
+
+    .navOptions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 15px;
+    }
+
+    .navOptions a {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .navOptions a:hover {
+        background-color: #FFFFFF;
+        color: #13194e;
+
+    }
+
+    .navOptions a img {
+        height: 100%;
+        padding-right: 7px;
+        transition: filter 0.3s;
+    }
+
+    .navOptions a:hover img {
+        filter: invert(100%);
+    }
+
+    /**fim do estilo da nav**/
+
+    /**início do estilo da main**/
+    main {
+        width: 100%;
+        height: 5000px;
+    }
+
+    section {
+        width: 100%;
+        height: 70px;
+        background-color: bisque;
+        margin-bottom: 50px;
+    }
+
+    /**fim do estilo da main**/
+
+}
